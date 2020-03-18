@@ -41,18 +41,18 @@
         android:id="@+id/quantity_seekBar"
         android:layout_width="320dp"
         android:layout_height="70dp"
+        android:layout_above="@+id/txtView"
         android:layout_below="@+id/dishes_spinner"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="56dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="36dp"
-        android:layout_marginBottom="325dp"
+        android:layout_marginBottom="60dp"
         android:indeterminate="true"
         android:max="10"
         android:progress="0" />
@@ -65,7 +65,85 @@
         android:layout_below="@+id/quantity_seekBar"
         android:layout_marginTop="70dp"
         android:layout_marginLeft="36dp"
+        android:gravity="center_horizontal"
         android:textSize="30dp"
         android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/radio_textView"
+        android:layout_width="137dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:layout_marginBottom="235dp"
+        android:gravity="center"
+        android:text="Select Your Tip"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <RadioButton
+        android:id="@+id/firsttip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="199dp"
+        android:checked="true"
+        android:text="10%"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton
+        android:id="@+id/secondtip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:layout_marginBottom="160dp"
+        android:checked="true"
+        android:text="15%"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton
+        android:id="@+id/thirdtip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="116dp"
+        android:checked="true"
+        android:text="20%"
+        android:onClick="onRadioButtonClicked"/>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginBottom="44dp"
+        android:text="Order Meal"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 </RelativeLayout>
